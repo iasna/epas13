@@ -4,7 +4,7 @@ RUN dnf -y install https://yum.enterprisedb.com/edbrepos/edb-repo-latest.noarch.
 
 # Replace 'USERNAME:PASSWORD' below with your username and password for the EDB repositories
 # Visit https://www.enterprisedb.com/user to get your username and password
-RUN  sed -i "s@<username>:<password>@asnaishrat1:ftMAyMUrXWJ5AHaB@" /etc/yum.repos.d/edb.repo
+RUN  sed -i "s@<username>:<password>@USERNAME:PASSWORD@" /etc/yum.repos.d/edb.repo
 
 # Install EPEL repository
 RUN  dnf -y install epel-release
